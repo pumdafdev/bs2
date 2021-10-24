@@ -1177,7 +1177,7 @@ class taskCog(commands.Cog):
 							aftr = tmp_aftr2
 						if (bossTime[i]+datetime.timedelta(days=-365)) <= aftr:
 							if basicSetting[2] != '0' and basicSetting[22] != '0' and bossFlag[i] == True and bossFlag0[i] == True and bossMungFlag[i] == True :
-								if int(basicSetting[17]) <= bossMungCnt[i] and int(basicSetting[17]) != 0:
+								if int(basicSetting[17]) <= bossMungCnt[i] and int(basicSetting[17]) != 0 bossData[i][7] == "1":
 									bossTime[i] = datetime.datetime.now()+datetime.timedelta(days=365, hours = int(basicSetting[0]))
 									tmp_bossTime[i] =  datetime.datetime.now()+datetime.timedelta(days=365, hours = int(basicSetting[0]))
 									bossTimeString[i] = '99:99:99'
