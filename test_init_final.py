@@ -2732,7 +2732,7 @@ class mainCog(commands.Cog):
 			if not args:
 				kill_output = ''
 				for key, value in kill_Data.items():
-					kill_output += ':skull_crossbones: ' + str(key) + ' : ' + str(value) + '회 등록!\n'
+					kill_output += str(key) + '\n'
 
 				if kill_output != '' :
 					embed = discord.Embed(
@@ -2752,7 +2752,7 @@ class mainCog(commands.Cog):
 				kill_Data[args] = 1
 					
 			embed = discord.Embed(
-					description= ':skull_crossbones: ' + args + ']\n',
+					description= args + ' 추가\n',
 					color=0xff00ff
 					)
 			return await ctx.send(embed=embed, tts=False)
